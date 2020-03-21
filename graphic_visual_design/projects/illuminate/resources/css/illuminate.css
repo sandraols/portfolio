@@ -1,0 +1,11 @@
+.divided-img-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 3vw;
+    height: 36.4vw;
+}
+
+.divided-img {
+    height: 100%;
+}

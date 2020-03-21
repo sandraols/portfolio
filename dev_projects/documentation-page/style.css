@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: sans-serif;
+    background-color: floralwhite;
+}
+
+#navbar {
+    position: fixed;
+    height: 100%;
+    width: 25vw;
+    border-right: solid;
+    border-color: rgb(127, 150, 120);
+    background: url(https://images.unsplash.com/photo-1493552152660-f915ab47ae9d?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.navbar-list {
+    margin: 30px 30px;
+    list-style: none;
+}
+
+.nav-link {
+    font-size: 100%;
+    text-decoration: none;
+    color: rgb(52, 80, 45);
+    font-weight: 600;
+    background-color: floralwhite;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.nav-link:hover {
+    background-color: rgb(236, 242, 223);
+    transition: 0.2s;
+}
+
+.nav-link > li {
+    margin: 10px;
+}
+
+.header {
+    color: rgb(52, 80, 45);
+    font-weight: 600;
+}
+
+.navbar-header {
+    font-size: 300%;
+    text-align: center;
+    margin: 20px;
+    line-height: 1;
+}
+
+.main-header {
+    text-align: left;
+    font-size: 200%;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+#main-doc {
+    margin-left: 25vw;
+    width: 75vw;
+}
+
+h2 {
+    font-size: 100%;
+    color: rgb(52, 80, 45);
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.main-section {
+    padding: 50px;
+    width: 100%;
+    border-bottom: solid;
+    border-right: solid;
+    border-color: rgb(127, 150, 120);
+}
+
+#An_introduction_to_indoor_plants.main-section  {
+    border-top: solid;
+    border-color: rgb(127, 150, 120);
+}
+
+
+p {
+    width: 70%;
+    line-height: 1.5;
+    font-size: 110%;
+    color: rgb(34, 36, 35);
+}
+
+code {
+    display: block;
+    border-radius: 3px;
+    background-color: rgb(236, 242, 223);
+    padding: 15px;
+    line-height: 1.5;
+    width: 20vw;
+    margin-top: 5px;
+}
+
+.common-indoor-plants-list {
+    list-style: none;
+}
+
+.common-indoor-plants-list li::before {
+    content: "\2022";
+    list-style: inside;
+    display: inline-block;
+    line-height: 1.5;
+    margin-top: 5px;
+    color: rgb(127, 150, 120);
+    width: 1.5vw;
+}
+
+.reference-link {
+    text-decoration: none;
+    color: rgb(34, 36, 35); 
+}
+
+.reference-link:hover {
+    color: rgb(127, 150, 120);
+    transition: 0.2s;
+}
+    
+/* ---------------------------------------------*/
+/* MEDIA QUERIES */
+/* ---------------------------------------------*/
+    
+@media only screen and (max-width: 850px) {
+    #navbar {
+        min-width: 230px; 
+    }
+    
+    #main-doc {
+        position: absolute;
+        margin-left: 230px;
+        width: 690px;
+    }
+}

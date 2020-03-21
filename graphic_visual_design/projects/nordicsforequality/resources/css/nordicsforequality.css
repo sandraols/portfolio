@@ -1,0 +1,20 @@
+
+.divided-img-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 3vw;
+    height: 22.7vw;
+}
+
+.divided-img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    min-width: 500px
+}

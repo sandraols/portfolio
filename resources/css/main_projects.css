@@ -1,0 +1,183 @@
+#container {
+    margin-left: 95px;
+    width: 60vw;
+}
+
+#title {
+    font-size: 1.5em;
+    letter-spacing: 0.13em;
+    margin-bottom: 50px;
+    margin-top: 70px;
+    text-transform: uppercase;
+}
+
+#sub-title {
+    margin-bottom: 15px;
+    font-size: 0.6em;
+    font-style: italic;
+    letter-spacing: 0.1em;
+}
+
+#paragraph {
+    font-size: 0.7em;
+    letter-spacing: 0.05em;
+    line-height: 1.7em;
+    width: 480px;
+    margin-bottom: 2vw;
+}
+
+#img-container > div {
+    line-height: 0;
+}
+
+#img-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#img-container div {
+    margin-bottom: 3vw;
+}
+
+.project-img {
+    width: 100%;
+    min-width: 500px;
+}
+
+/*-------LINKS-------*/
+
+a {
+    text-decoration: underline;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/* ---------------------------------------------*/
+/* FOOTER */
+/* ---------------------------------------------*/
+
+#copyright {
+    color: white;
+    font-size: 0.65em;
+    letter-spacing: 0.1em;
+    font-style: italic;
+    padding: 0px 50px 30px 95px;
+}
+
+/* ----------- Go Back Button ----------- */
+
+i {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    margin: -12px -279px 10px 10px;
+    float: right; 
+}
+
+i:hover {
+    border: black;
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+/* ---------------------------------------------*/
+/* MEDIA QUERIES */
+/* ---------------------------------------------*/
+
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    #container {
+        margin-left: 7.5vw;
+        width: 85vw;
+    }
+    #title {
+        font-size: 5em;
+    }
+    #sub-title {
+        font-size: 1.5em;
+    }
+
+    #paragraph {
+        font-size: 2em;
+        width: 800px;
+        letter-spacing: normal;
+    }  
+    #copyright {
+    font-size: 1em;
+    }
+
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    #container {
+        margin-left: 7.5vw;
+        width: 85vw;
+    }
+    #title {
+        font-size: 5em;
+    }
+    #sub-title {
+        font-size: 1.5em;
+    }
+
+    #paragraph {
+        font-size: 2em;
+        width: 800px;
+        letter-spacing: normal;
+    }  
+    #copyright {
+    font-size: 1em;
+    }
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+     #container {
+        margin-left: 7.5vw;
+        width: 85vw;
+    }
+    #title {
+        font-size: 5em;
+    }
+    #sub-title {
+        font-size: 1.5em;
+    }
+
+    #paragraph {
+        font-size: 2em;
+        width: 800px;
+        letter-spacing: normal;
+    }  
+    #copyright {
+    font-size: 1em;
+    }
+}
+
+

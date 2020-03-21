@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <title>Temperature converter</title>
+        <link rel="stylesheet" href="resources/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <meta name="viewport" content="user-scalable=0" />
+    </head>
+    <body>
+        <main id="container">
+            <header id="header">What&#39;s the temperature?</header>
+            <div id="from-to-container" class="container-element">
+                <select id="from-select" class="input-box">
+                    <option value="">From</option>
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+                <select id="to-select" class="input-box">
+                    <option value="">To</option>
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+            </div>
+            <div id="value-answer-container" class="container-element">
+                <div id="value-container">
+                    <input type="number" name="value" id="value-input" class="input-box" placeholder="insert value">
+                </div>
+                <div id="answer-container">
+                    <input type="text" name="answer" id="answer-input" class="input-box" placeholder="result shows here">
+                </div>
+            </div>
+            <div id="button-container" class="container-element">
+                <input type="submit" id="submit" class="input-box" value="convert">
+            </div>
+        </main> 
+
+        <script src="../temperature_converter/resources/script.js"></script>
+    </body>
+</html>

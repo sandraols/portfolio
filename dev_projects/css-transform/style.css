@@ -1,0 +1,223 @@
+
+#background {
+    background: linear-gradient(black, #171743, #225d88);
+    position: fixed;
+    padding: 50px;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.ball {
+    position: fixed;
+    cursor: pointer;
+}
+
+#ball1 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: linear-gradient(15deg, rgb(141, 255, 207), rgb(137, 116, 255));
+    margin: 17vh 5vw 0vh 70vw;
+}
+
+#ball2 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: linear-gradient(60deg, rgb(246, 255, 141), rgb(248, 184, 156));
+    margin: 29vh 5vw 20vh 45vw;
+    transform:scale(1.5);
+}
+
+#ball3 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 15vh 30vw;
+    background: linear-gradient(15deg, rgb(246, 255, 141), rgb(141, 255, 207));
+}
+
+#ball4 {
+    height: 100px;
+    width: 100px;
+    left: 60%;
+    margin: 41vh 0vw;
+    border-radius: 50%;
+    background: linear-gradient(80deg, rgb(255, 159, 141), rgb(245, 165, 255));
+}
+
+#ball5 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: linear-gradient(70deg, rgb(141, 255, 255), rgb(252, 180, 255));
+    margin: 45vh 19vw;
+    transform:scale(2);
+}
+
+/*
+#moon1 {
+    position: fixed;
+    margin: 60vh 41vw;
+    width: 100px;
+    height: 100px; 
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 25px 10px 0 0 rgb(248, 184, 156);
+    transform: rotate(112deg);
+}
+*/
+
+#moon2 {
+    margin: 7vh 0vw 5vh 7vw;
+    width: 100px;
+    height: 100px; 
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 25px 10px 0 0 rgb(156, 202, 248);
+    animation-name: moon;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+/*
+#heart1 {
+    margin: 43vh 5vw 10vh 83vw;
+    background-color: rgb(255, 178, 255);
+    height: 50px;
+    width: 50px;
+    transform: rotate(-45deg);
+    animation-name: heart;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+}
+
+#heart1::after {
+    background-color: rgb(255, 178, 255);
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    left: 25px;
+}
+
+#heart1::before {
+    content: "";
+    background-color: rgb(255, 178, 255);
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: 0px;
+}
+*/
+
+.stars {
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+  }
+
+#star1 {
+    height: 10px;
+    width: 10px;
+    margin: auto 4vw;
+    animation-name: star-1;
+    animation-duration: 2s;
+}
+
+#star2 {
+    height: 10px;
+    width: 10px;
+    margin: -14vh auto;
+    animation-name: star-2;
+    animation-duration: 2s;
+}
+
+#star3 {
+    height: 10px;
+    width: 10px;
+    margin: auto 15vw;
+    animation-name: star-1;
+    animation-duration: 1s;
+}
+
+#star4 {
+    margin: -2vh 60vw;
+    animation-name: star-1;
+    animation-duration: 1s;
+}
+
+#star5 {
+    margin: 5vh 35vw;
+    animation-name: star-2;
+    animation-duration: 1s;
+}
+
+#star6 {
+    height: 10px;
+    width: 10px;
+    margin: 15vh 84vw;
+    animation-name: star-1;
+    animation-duration: 1s;
+}
+
+#star7 {
+    margin: -32vh 2vw;
+    animation-name: star-1;
+    animation-duration: 1s;
+}
+
+#star8 {
+    margin: 27vh 89vw;
+    animation-name: star-2;
+    animation-duration: 1s;
+}
+
+#star9 {
+    margin: 5 vh auto;
+    animation-name: star-1;
+    animation-duration: 1s;
+}
+
+/*
+@keyframes heart {
+    0% {
+      transform: scale(1) rotate(-45deg);
+    }
+    50% {
+      transform: scale(0.6) rotate(-45deg);
+    }
+}
+*/
+
+@keyframes star-1 {
+    70% {
+      transform: scale(0.5);
+      opacity: 0.5;
+    }
+  }
+
+@keyframes star-2 {
+    20% {
+      transform: scale(0.5);
+      opacity: 0.5;
+    }
+  }
+
+@keyframes moon {
+    50% {
+        transform: rotate(25deg);
+    }
+    100% {
+        transform: matrix3d(90deg);
+    }
+}
